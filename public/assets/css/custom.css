@@ -1,0 +1,138 @@
+html,body{
+
+    font-family: 'Cairo', sans-serif!important;
+    font-size: 18px;
+
+
+
+}
+.spcontainer{
+
+  position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    background-color: #0a0c0e;
+    width: 100%;
+    height: 100%;
+   visibility: visible;
+    opacity: 0.6;
+
+transition: 1s ease-in-out ;
+    animation: fadeOut .5s ease-in-out forwards;
+
+}
+
+
+.fadeOut{
+
+    visibility:hidden;
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+.hearo {
+
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100%;
+    background-color: #152b3c;
+    color: #fff;
+    overflow: hidden;
+    height: 300px;
+    background-size: cover;
+    margin-top: 73px;
+    margin-bottom: 50px;
+    overflow-y: hidden;
+}
+
+.hearo .hearo-right,
+.hearo-left {
+    height: 301px;
+
+}
+
+.hearo .hearo-right>div,
+.hearo-left>div {
+
+    margin-top: 100px;
+
+}
+
+.hearo-left{
+
+    background-color: #383438a3;
+}
+
+.active{
+
+    color:  #00dc82!important;
+    font-family: 'Cairo', sans-serif;
+    font-size: 19px;
+}
+.swiper {
+    width: 100%;
+    height: 330px;
+    direction: rtl;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.customcard{
+    border-radius: 9%;
+    padding-top: 14px;
+    /* width: 90%; */
+}
+/*.customcard img{*/
+/*    border-radius: 9%;*/
+/*    height: 120px;*/
+/*}*/
+.page-link {
+    padding: 0.8rem 1.8rem;
+    color: #9dacbf;
+    background-color: #2d343a;
+    border: 1px solid #464f5b;
+}
+
+.card-body {/* height: 142px; *//* overflow-y: scroll; */font-size: smaller;}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+
+#scroll-to-top.show {
+    opacity: 1;
+}
